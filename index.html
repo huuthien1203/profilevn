@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/19f3beeaec.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper flex">
+        <div class="sidebar">
+            <div class="avatar">
+                <img src="data:image/jpeg;base64,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"
+                    width="215" height="215" alt="Md Alamin Mir" />
+                <h1 class="name">HUU THIEN</h1>
+                <h4 class="job">生産技術</h4>
+            </div>
+
+            <div class="module">
+                <h3 class="module__title" id="hide">
+                    <i id="a1" class="fa fa-user circle circle--medium"></i>
+                    <span>紹介</span>
+                </h3>
+                <div class="module__content" id="text">
+                    <p>ベトナムの南部で生まれました。趣味は旅行を行くことです。今本多プラスベトナムの生産技術部で働いています。</p>
+                </div>
+            </div>
+
+            <div class="module">
+                <h3 class="module__title">
+                    <i id="a2" class="fa fa-address-book-o circle circle--medium"></i>
+                    <span>Contact Me</span>
+                </h3>
+                <div class="module__content" id="text1">
+                    <ul>
+                        <li class="flex">
+                            <i class="fa fa-map-marker circle circle--small circle--white"></i>
+                            <div>Amata,Long Binh Ward, Bien Hoa city,Dong Nai Province </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-globe circle circle--small circle--white"></i>
+                            <div>huuthien@vn.hondaplus.co.jp</div>
+                        </li><br>
+                        <li class="flex">
+                            <i class="fa fa-mobile circle circle--small circle--white"></i>
+                            <div>0901611xxx</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module module--progress">
+                <h3 class="module__title">
+                    <i id="a3" class="fa fa-graduation-cap circle circle--medium"></i>
+                    <span>My Skills</span>
+                </h3>
+                <div class="module__content" id="text2">
+                    <ul>
+                        <li class="flex">
+                            <i class="fa fa-paint-brush circle circle--small circle--white"></i>
+                            <div class="flex--1">
+                                <span>CREO PARAMETRIC</span>
+                                <span class="progress-bar"><span style="width:70%"></span></span>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-html5 circle circle--small circle--white"></i>
+                            <div class="flex--1">
+                                <span>HTML / CSS / JS</span>
+                                <span class="progress-bar"><span style="width:30%"></span></span>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-android circle circle--small circle--white"></i>
+                            <div class="flex--1">
+                                <span>PLC&AIA PROGRAM</span>
+                                <span class="progress-bar"><span style="width:50%"></span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="section__title">
+                    <i class="fa fa-pencil"></i>
+                    <span class="hide" id="">学問</span>
+                </h2>
+                <div class="section__content">
+                    <div class="module">
+                        <h3 class="module__title">小学校</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-home"></i>THANH HOA</span>
+                            <span><i class="fa fa-calendar"></i>2003年１2月　まで</span>
+                        </div>
+                        <div class="module__content">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h3 class="module__title">中学校</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-home"></i>NGUYEN HONG DAO</span>
+                            <span><i class="fa fa-calendar"></i>2007年１2月　まで</span>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h3 class="module__title">高校生</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-home"></i>NGUYEN VAN CU</span>
+                            <span><i class="fa fa-calendar"></i>2010年１2月　まで</span>
+                        </div>
+                        <div class="module__content">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h3 class="module__title">大学</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-graduation-cap"></i>HCMC UNIVERCITY TECHNOLOGY AND EDUCATION</span>
+                            <span><i class="fa fa-calendar"></i>2014年12月 まで</span>
+                        </div>
+                        <div class="module__content">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2 class="section__title">
+                    <i class="fa fa-briefcase circle circle--large"></i>
+                    <span>経験</span>
+                </h2>
+                <div class="section__content">
+                    <div class="module">
+                        <h3 class="module__title">オペレーター</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-briefcase"></i>UNILEVR VIET NAM</span>
+                            <span><i class="fa fa-calendar"></i>2016年12月 まで</span>
+                        </div>
+                        <div class="module__content">
+                            <p>洗剤とか石鹸とか調味料を作っている会社でございます。</p>
+                        </div>
+                    </div>
+
+
+                    <div class="module">
+                        <h3 class="fa fa-briefcase">日本で実習生</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-building-o"></i>静岡県で働いていました。</span>
+                            <span><i class="fa fa-calendar"></i>2020年03月 まで</span>
+                        </div>
+                        <div class="module__content">
+                            <p>洗濯機や車や医療機器の部品を加工している会社でございます。</p>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h3 class="fa fa-briefcase">生産技術</h3>
+                        <div class="module__meta">
+                            <span><i class="fa fa-building-o"></i>本多プラスベトナムで働いています。</span>
+                            <span><i class="fa fa-calendar"></i>2020年05月から</span>
+                        </div>
+                        <div class="module__content">
+                            <p>経営理念 他人のやらないことをやる！ 我々は日進月歩を合言葉とし、つねに改革・改善に努め、小物ブロー成形分野において世界のオンリーワンメーカーを目指し、広く社会に貢献いたします。 本多プラスは、ブロー成形技術の限界域を超える”パイオニア"になりたいと考えております。 商品企画、デザイン〜金型・装置製作等を内製することで、よりスピーディーでユニークなご提案ができるよう、努力して参ります。
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="section">
+                <h2 class="section__title">
+                    <i id="a4" class="fa fa-briefcase circle circle--large"></i>
+                    <span>言語</span>
+                </h2>
+                <div class="section__content" id="text3">
+                    <div class="lang flex">
+                        <div class="lang__content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/338px-Flag_of_Japan.svg.png" width="133" height="89" alt="japanese" />
+                            <h4>JAPANESE</h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="lang__content">
+                            <img src="https://kenh14cdn.com/thumb_w/660/2017/5-1503128133747.png" width="133" height="89" alt="ENGLISH" />
+                            <h4>ENGLISH</h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+<audio src="https://nhactiktokhay.com/yongki-mix-x-adit-sparky-remix-tiktok-nhac-hot-tiktok.html?download=11916" autoplay></audio>
+
+</html>
